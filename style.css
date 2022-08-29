@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    /* background-image: linear-gradient(rgb(83, 166, 201),rgb(164, 164, 189)); */
+    --box-shadow-dark:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow-light:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-image: var(--light-grad);
+    --orange-gradient: radial-gradient( circle farthest-corner at 11.6% 23%,  rgba(213,31,6,1) 0%, rgba(241,132,60,1) 90% );
+   --light-grad: radial-gradient( circle farthest-corner at 1.5% 7.8%,  rgba(247,179,140,1) 0%, rgba(229,118,127,1) 48.2%, rgba(149,83,153,1) 100.2% );
+    --purple-gradient: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+}
+a{
+    text-decoration: none;
+}
+.mb2rem{
+    margin-bottom: 2rem;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.title{
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.title small{
+    font-size: 1rem;
+ }
+.small-title{
+    font-size: 1.2rem;
+}
+.small-title small{
+    font-size: .8rem;
+} 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.all-center{
+    justify-content: center;
+    align-items: center;
+}
+.mb1rem{
+    margin-bottom: 1rem;
+}
+/* ..............Styling nav-bar................. */
+nav{
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-image: var(--purple-gradient);
+    z-index: 1;
+    box-shadow: var(--box-shadow-dark);
+    margin-bottom: 2rem;
+}
+/*.....styling left side of nav-bar.....*/
+.logo-profile{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    padding: 1%;
+    margin-left: 2rem;
+}
+.logo-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+nav-left>p{
+    font-size: 1.5rem;
+    margin-left: 40%;
+   
+}
+
+/*..........styling right side of nav bar......*/
+
+.search-box{
+    width: 20rem;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: var(--box-shadow-light);
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.search-box input{
+    width: 17rem;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight:bolder
+}
+.bell{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+.bell::after{
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*.............styling main content.........*/
+.container{
+    width: 97vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    position: relative;
+}
+.left-main{
+    width: 70vw;
+    /* box-shadow: var(--box-shadow-light); */
+    padding: 1%;
+    
+}
+.side-main{
+    width: 25vw;
+    /* box-shadow: var(--box-shadow-light); */
+    padding: 1%;
+   
+}
+.stick{
+    position: sticky;
+    top: 0;
+}
+.album-gallrey .gener-box{
+    box-shadow: none;
+    transition: 1s ease-in-out;
+}
+.album-gallrey .gener-box:hover{
+    transform: scale(1.1);
+}
+.album-gallrey{
+    box-shadow: var(--box-shadow-dark);
+    justify-content: space-around;
+
+}
+/*...........styling latest Release Section..........*/
+
+.event{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.event-box{
+    flex-basis: 45%;
+    justify-content: space-between;
+    margin: .5%;
+    padding: 1%;
+    box-shadow: var(--box-shadow-dark)
+}
+.event-left img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.event-right{
+    text-align: right;
+}
+
+
+/* ...................styling artist section............. */
+
+.artist-box img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: 5px ;
+    box-shadow: var(--box-shadow-light);
+}
+.left-side:hover,.artist-box:hover,.event-box:hover,.gener-box:hover,.event-left{
+    transform: scale(1.1);
+}
+
+ 
+/* ...........styling music gener .............. */
+.gener{
+    justify-content: space-around;
+}
+.gener-box {
+    position: relative;
+    margin: 1%;
+    color: white;
+    box-shadow: var(--box-shadow-light);
+    padding: 1%;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.8));
+}
+.gener-box img{
+    width: 100%;
+    
+}
+.gener-box p{
+    position: absolute;
+    top:40%;
+    left: 40%;
+}
+.gener .gener-box img{
+   width: 7rem;
+   height: 7rem;
+   border-radius: 50%;
+
+}
+
+.trend{
+    box-shadow: var(--box-shadow-dark);
+    padding: 1%;
+}
+
+
+
+/* ...................styling for right-side............. */
+
+.left-side img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.list{
+    justify-content: space-between;
+    width: 100%;
+    padding: 1%;
+    box-shadow: var(--box-shadow-light);
+}
+.list p,.list img{
+    margin-right: .5rem;
+}
+
+
+
+
+
+/* ......................styling artist page...................... */
+
+
+
+.artist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(83, 166, 201),rgb(164, 164, 189));
+
+}
+ #art:target{
+    height: 100%;
+    width: 97vw;
+
+} 
+.artist-details{
+    width: 100%;
+    height: 50vh;
+    padding: 1%;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow-dark);
+}
+.right-artist-image{
+    width: 30%;
+    height:90%;
+}
+.right-artist-image img{
+    width: 100%;
+    
+}
+.details{
+    width: 65%;
+}
+.right-icon >i{
+   margin-right: 5rem
+}
+.event-side{
+    width: 100%;
+}
+.button{
+    width: 8rem;
+    height: 3rem;
+    justify-content: center;
+    background-image: linear-gradient(blue,red);
+    margin-right: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+/* ..................music player style........ */
+.left img,.right img{
+    max-width: 100px;
+    height: 100px;
+    animation: translate 2s infinite linear;
+
+}
+.music-box{
+    background-color: black;
+    position: relative;
+    
+}
+.music-box a{
+    position: absolute;
+    top: 0px;
+    border-radius: 4px;
+    right: 0px;
+    color: red;
+    margin-right: 0;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+ .control-btn {
+    width: 40px;
+    height: 40px;
+    background-color:pink ;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.mid{
+    width: 600px;
+    background-color: rgb(8, 8, 9);
+}
+audio{
+    margin-top: .8rem;
+   max-width:  400px;
+    height: 20px;
+    margin: auto;
+}
+.right img{
+    background:transparent;
+    animation: rotation 2s infinite linear ;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .right{
+    background-color: black;
+  }
+  #music1{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  #music1:target{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    visibility: visible;
+  }
+  
+  @keyframes translate {
+    from{
+      transform: translate(-100px);
+    }
+    to{
+      transform: translate(50px);
+  
+    }
+    
+  }
+
+@media (max-width:1024px){
+   #fvt{
+    width: 0px;
+    overflow: hidden;
+    display: none
+
+   }
+   .left,.right{
+    display: none;
+}
+}
+@media (max-width:700px){
+    html{
+        font-size: 12px;
+    }
+    .search-box{
+        width: 10rem;
+    }
+    .search-box i{
+        display: none;
+    }
+    
+}
+
+@media(max-width:500px){
+    .side-main{
+        display: none;
+    }
+}
