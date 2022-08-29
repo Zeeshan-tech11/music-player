@@ -395,6 +395,9 @@ audio{
    .left,.right{
     display: none;
 }
+.right-artist-image{
+    height: 30%;
+}
 }
 @media (max-width:700px){
     html{
